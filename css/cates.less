@@ -1,0 +1,221 @@
+.catesPage {
+    margin-top: -30px;
+    color: #3c3d45;
+    font-family: 'Righteous', cursive;
+    .cates_header {
+        background: #fff;
+        height: 120px;
+        line-height: 120px;
+        overflow: hidden;
+        .header_logo {
+            width: 200px;
+            margin-top: 8.5px;
+            margin-left: 10px;
+            overflow: hidden;
+            img {
+                width: 120px;
+                height: 110px;
+                margin: auto;
+                border-radius: 50%;
+            }
+        }
+        .header_center {
+            width: 400px;
+            padding-top: 20px;
+            color: #fa8919;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .header_text {
+            width: 400px;
+            font-size: 18px;
+            color: #fa8919;
+            padding-top: 15px;
+            text-align: center;
+            p {
+                line-height: 20px;
+                label {
+                    line-height: 60px;
+                    font-weight: bold;
+                    font-size: 60px;
+                }
+            }
+            img {
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 200px;
+                height: 100px;
+            }
+        }
+    }
+    .cates_banner {
+        position: relative;
+        width: 100%;
+        background: url(images/cates_banner_bg.jpg) no-repeat 0px 0px;
+        background-size: cover;
+        min-height: 664px;
+        .banner_title {
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            z-index: 2;
+            color: #fff;
+            font-weight: 700;
+            font-size: 20px;
+            font-family: Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+        }
+        .banner_textslide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .5);
+            color: #fff;
+            font-size: 14px;
+            ul {
+                width: 100%;
+                height: 50%;
+                margin-top: 15%;
+                position: relative;
+                li {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    font-size: 32px;
+                    text-align: center;
+                    &.active{
+                    	z-index:-1;
+                    }
+                    &.ng-hide {
+                        animation: ani 1s linear;
+                    }
+                    p {
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .cates_point {
+                position: absolute;
+                bottom: 20px;
+                left: 0px;
+                right: 0;
+                text-align: center;
+                span {
+                    width: 50px;
+                    height: 5px;
+                    background-color: #fff;
+                    display: inline-block;
+                    margin-right: 5px;
+                    &.active {
+                        background-color: #fa8919;
+                    }
+                }
+            }
+        }
+    }
+    .cates_main {
+        margin-top: 20px;
+        .cates_intro {
+            text-align: center;
+            margin-bottom: 20px;
+            .p_1 {
+                font-size: 40px;
+                margin-bottom: 10px;
+                line-height: 50px;
+                color: #3c3d45;
+                span {
+                    border-bottom: 5px solid #f6c698;
+                }
+            }
+        }
+        .cates_imgBox {
+            li {
+                float: left;
+                width: 31%;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+                border: 1px solid transparent;
+                margin-right: 2.3%;
+                background: #fff;
+                overflow: hidden;
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+                &:hover {
+                    border: 1px solid #f6c698;
+                    .mask {
+                        display: block;
+                        animation: gotop 0.5s forwards;
+                    }
+                }
+                a {
+                    display: block;
+                    padding: 15px;
+                    width: 340px;
+                    height:225px;
+                    overflow: hidden;
+                    &:hover {
+                        img {
+                            transform: scale(1.2);
+                        }
+                    }
+                    img {
+                    	width: 100%;
+                    	height:225px;
+                        background: #e9e9e9;
+                        padding: 4px;
+                        border: 2px solid #ccc;
+                        box-sizing: border-box;
+                        transition: all 2s;
+                    }
+                }
+                .item_intro{
+                	width:100%;
+                	height:110px;
+                	overflow: hidden;
+                }
+                h4 {
+                    font-size: 20px;
+                    margin-left: 12px;
+                }
+                p {
+                    margin: 10px;
+                }
+                .mask {
+                    position: absolute;
+                    left: 0;
+                    bottom: -120px;
+                    right: 0;
+                    height: 120px;
+                    background: #edeef1;
+                    color: #ff9800;
+                    text-align: center;
+                    p {
+                        margin-top: 20px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes gotop {
+    0% {
+        bottom: -120px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes ani {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}

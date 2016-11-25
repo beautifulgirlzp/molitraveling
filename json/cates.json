@@ -1,0 +1,60 @@
+{
+	"showText":[
+		{
+			"p1":"意式餐厅,满足您的味蕾",
+			"p2":"Temporibus Autem Quibusdam Et Aut Officiis Debitis Aut Rerum Libero Tempore, Cum Soluta Nobis Est Eligendi Optio Cumque"
+		},
+		{
+			"p1":"法式餐厅,大饱您的眼福",
+			"p2":"Temporibus Autem Quibusdam Et Aut Officiis Debitis Aut Rerum Libero Tempore, Cum Soluta Nobis Est Eligendi Optio Cumque"
+		},
+		{
+			"p1":"中华菜系,满足您的需求",
+			"p2":"北京烤鸭,陕西的肉夹馍,四川腊肠,重庆火锅,武汉热干面,广东肠粉,洛阳不翻汤,河南卤面,新疆大盘鸡"
+		}
+	],
+	"cates_main":[
+		{
+			"imgsrc":"images/cates_img1.jpg",
+			"h4_title":"this is an apple",
+			"p_intro":"he sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!",
+			"mask_p1":"delicious and inexpensive",
+			"mask_p2":"health and do good to stomach"
+		},
+		{
+			"imgsrc":"images/cates_img2.jpg",
+			"h4_title":"this is an apple",
+			"p_intro":"he sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!",
+			"mask_p1":"delicious and inexpensive",
+			"mask_p2":"health and do good to stomach"
+		},
+		{
+			"imgsrc":"images/cates_img3.jpg",
+			"h4_title":"山西肉夹馍",
+			"p_intro":"只有你想不到的美味",
+			"mask_p1":"好吃不贵",
+			"mask_p2":"健康美味"
+		},
+		{
+			"imgsrc":"images/cates_img4.jpg",
+			"h4_title":"上海小甜品",
+			"p_intro":"浓浓的爱意,送给你亲爱的他或者她",
+			"mask_p1":"加点儿爱心更温暖哦",
+			"mask_p2":"饭后小甜品,暖胃更暖心"
+		},
+		{
+			"imgsrc":"images/cates_img1.jpg",
+			"h4_title":"this is an apple",
+			"p_intro":"he sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!",
+			"mask_p1":"delicious and inexpensive",
+			"mask_p2":"health and do good to stomach"
+		},
+		{
+			"imgsrc":"images/cates_img2.jpg",
+			"h4_title":"this is an apple",
+			"p_intro":"he sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!",
+			"mask_p1":"delicious and inexpensive",
+			"mask_p2":"health and do good to stomach"
+		}
+	]
+}

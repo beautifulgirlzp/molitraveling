@@ -1,0 +1,8 @@
+{
+    "USA": {
+        "imgList": ["images/Am1.jpg", "images/Am2.jpg", "images/Am3.jpg", "images/Am4.jpg"],
+        "abstract": "美国是高度发达的资本主义国家，国土面积居世界第三，领土横跨较大，地势多样。美国丰富的自然资源和多样的民族文化使它成为极具吸引力的旅游国家。",
+        "best_time": [{ "time": "6月——8月", "weather": "全国天气暖和，通常是高温。" }, { "time": "4月——5月", "weather": "气候适宜，人相对较少。" }, { "time": "11月——3月", "weather": "低温，有些地方有暴雪。" }]
+    }
+    
+}

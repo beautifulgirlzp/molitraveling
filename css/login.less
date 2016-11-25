@@ -1,0 +1,124 @@
+.login{
+	padding: 40px 0px;
+	.login-box{
+		border: 1px solid #dbdbe0;border-radius: 10px;background: #fff;
+		width: 400px;
+		margin: 0 auto;
+		padding: 30px 30px 0px 30px;
+		form{
+			position: relative;
+			input,p,button{
+				box-sizing:border-box;
+				border-radius: 4px;
+			}
+			>h3{
+				display: block;
+				line-height: 40px;
+				margin-bottom: 20px;
+			}
+			>input{
+				line-height: 30px;
+				height: 40px;
+				text-align: left;
+				border: 1px solid #dbdbe0;
+				padding: 0px 20px;
+				display: inline-block;
+				margin-bottom: 40px;
+				&:focus{
+					outline: 1px solid #11a6ff;
+				}
+				&.login-text{
+					width: 220px;margin-right: 10px;
+				}
+				&.login-submit{
+					text-align: center;
+					font-size: 16px;
+					font-weight: bold;
+					margin-bottom: 20px;
+				}
+				&.loginSubmit{
+					background: #FA8919;
+					color: #fff;
+				}
+			}
+			button.login-btn{
+				width: 170px;
+				line-height: 40px;
+				border: 0 none;
+			}
+			button.loginBtn{
+				background: #FA8919;
+				color: #fff;
+			}
+			input.login-tel,input.login-password,input.login-submit{
+					width: 400px;
+			}
+			>p{
+				height: 30px;
+				line-height: 30px;
+				font-size: 12px;
+				color: #f00;
+				&.login-tel-p{
+					position: absolute;top: 100px;left: 20px;font-size: 12px;line-height: 40px
+				}
+				&.login-text-p{
+					position: absolute;top: 178px;left: 20px;font-size: 12px;line-height: 40px
+				}
+				&.login-password-p{
+					position: absolute;top: 260px;left: 20px;font-size: 12px;line-height: 40px
+				}
+			}
+		}
+		label{
+			line-height: 30px;height: 30px;display: block;margin-top: 10px;position: relative;padding-left: 25px;
+			&.login-checkbox{
+				background: #fff;
+				border: 1px solid #11a6ff;
+				position: absolute;
+				width: 15px;
+				height: 15px;
+				top: 8px;
+				left: 2px;
+			}
+		}
+		.login-box-bottom{
+			width: 460px;
+			margin-left: -30px;
+			text-align: center;
+			line-height: 60px;
+			height: 60px;
+			border-top: 1px solid #dbdbe0;
+			border-radius: 10px 10px;
+			background: #f7f7f8;
+			border-top-left-radius:0px;
+			border-top-right-radius:0px;
+			>a{
+				color: #00a0ff;
+			}
+		}
+		.login-partner{
+			padding: 20px 0px;
+			.login-partner-span{width: 40%;display: inline-block;height: 1px;background: #ccc;margin-top: 15px;}
+			.login-partner-test{width: 20%;display: inline-block;text-align: center;line-height: 30px;color: #000}
+			.login-partner-p{
+				text-align: center;
+				margin-top: 10px;
+				>a{
+					&:nth-of-type(1)>i{color: #02bb00;border-color: #02bb00;}
+					&:nth-of-type(2)>i{color: #4f94cf;border-color: #4f94cf;}
+					&:nth-of-type(3)>i{color: #db2920;border-color: #db2920;}
+					>i{
+						width: 25px;
+						height: 25px;
+						display: inline-block;
+						text-align: center;
+						line-height: 25px;
+						border-radius: 50%;
+						border: 1px solid;
+						margin:0px 10px;
+					}
+				}
+			}
+		}
+	}
+}

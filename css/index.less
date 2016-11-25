@@ -1,0 +1,241 @@
+.bg-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:-1;
+    overflow: hidden;
+    background: url(images/mofang_background.png) no-repeat center bottom #fff;
+    .bg-animated {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        img {
+            vertical-align: middle;
+            border: none;
+        }
+        .ani-yellow {
+            width: 271px;
+            height: 460px;
+            left: -90px;
+            position: absolute;
+            top: 100px;
+            transform-origin: top center;
+            -webkit-transform-origin: top center;
+            animation: lighthouse 3s 0.1s infinite linear alternate;
+            -webkit-animation: lighthouse 3s 0.1s infinite linear alternate;
+            -moz-animation: lighthouse 3s 0.1s infinite linear alternate;
+        }
+        .ani-smallblue {
+            width: 121px;
+            height: 113px;
+            left: 380px;
+            position: absolute;
+            top: 70px;
+            -webkit-transform-origin: top center;
+            transform-origin: top center;
+            -webkit-animation: lighthouse 3s 1.1s infinite linear alternate;
+            -moz-animation: lighthouse 3s 1.1s infinite linear alternate;
+            animation: lighthouse 3s 1.1s infinite linear alternate;
+        }
+        .ani-red {
+            width: 290px;
+            height: 184px;
+            right: 100px;
+            position: absolute;
+            top: 70px;
+            -webkit-transform-origin: top center;
+            transform-origin: top center;
+            -webkit-animation: lighthouse 4s 0.1s infinite linear alternate;
+            -moz-animation: lighthouse 4s 0.1s infinite linear alternate;
+            animation: lighthouse 4s 0.1s infinite linear alternate;
+        }
+        .ani-bigblue {
+            width: 346px;
+            height: 298px;
+            right: -150px;
+            position: absolute;
+            top: 260px;
+            -webkit-transform-origin: top center;
+            transform-origin: top center;
+            -webkit-animation: lighthouse 3s 0.5s infinite linear alternate;
+            -moz-animation: lighthouse 3s 0.5s infinite linear alternate;
+            animation: lighthouse 3s 0.5s infinite linear alternate;
+        }
+    }
+}
+
+@keyframes lighthouse {
+    0% {
+        transform: translate3d(15%, 0, 0) rotateZ(10deg);
+        -webkit-transform: translate3d(15%, 0, 0) rotateZ(10deg);
+        -moz-transform: translate3d(15%, 0, 0) rotateZ(10deg);
+    }
+    100% {
+        transform: translate3d(-15%, 0, 0) rotateZ(-10deg);
+        -webkit-transform: translate3d(-15%, 0, 0) rotateZ(10deg);
+        -moz-transform: translate3d(-15%, 0, 0) rotateZ(10deg);
+    }
+}
+
+.section{width:100%;}
+
+
+.content {
+    text-align: center;
+    /*position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 0;*/
+    /*left: 0;*/
+    margin: auto;
+    .title {
+        font-size: 36px;
+        color: #3a3a3a;
+    }
+    .introduce {
+        color: #7a7a7a;
+        line-height: 26px;
+        text-align: center;
+        margin-top: 18px;
+    }
+}
+
+.content1 {
+    width: 466px;
+    height: 450px;
+    img {
+        height: 166px;
+        width: 170px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .underline {
+        text-align: center;
+        margin-top: 20px;
+        span {
+            width: 42px;
+            height: 2px;
+            background-color: #999eaf;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .bottom {
+        margin: 160px auto 0px;
+        color: #7a7a7a;
+        font-size: 12px;
+    }
+}
+
+.content2 {
+    width: 1035px;
+    height: 480px;
+    .content2_img {
+        height: 390px;
+        margin-top: 55px;
+        li {
+            float: left;
+            margin-left: 23px;
+            img {
+                display: block;
+                height: 278px;
+                margin-bottom: 30px;
+                &.w140 {
+                    width: 140px;
+                }
+                &.w316 {
+                    width: 316px;
+                    height: 259px;
+                    margin-top: 20px;
+                }
+                &.w320 {
+                    width: 320px;
+                }
+            }
+            a {
+                background-color: transparent;
+                .btn {
+                    width: 90px;
+                    padding: 5px 0;
+                    display: inline-block;
+                    border: 1px solid #fa8901;
+                    border-radius: 28px;
+                    color: #fa8901;
+                    cursor: pointer
+                }
+            }
+        }
+    }
+}
+
+.content3 {
+    width: 345px;
+    height: 480px;
+    .content3_center {
+        margin-top: 72px;
+        p {
+            margin: 0 auto;
+        }
+        h3 {
+            font-size: 160px;
+            margin-top: -26px;
+            color: #3a3a3a;
+            font-family: Verdana Regular;
+        }
+        h4 {
+            line-height: 8px !important;
+        }
+        h5 {
+            margin-top: 8px;
+        }
+    }
+    .bottom {
+        width: auto;
+        margin: 103px auto 0px;
+        font-size: 12px;
+        color: #7a7a7a;
+    }
+}
+
+.content4 {
+    width: 920px;
+    height: 450px;
+    .content4_center {
+        height: 208px;
+        margin-top: 70px;
+        dl {
+            width: 252px;
+            height: 208px;
+            float: left;
+            margin: 0;
+            margin-right: 80px;
+            dt {
+                a,
+                img {
+                    display: block;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                }
+            }
+            dd {
+                margin: 15px 18px 18px 18px;
+                color: #7a7a7a;
+                text-align: left;
+                line-height: 24px;
+                h6 {
+                    text-align: center;
+                    margin-bottom: 8px;
+                    font-size: 14px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

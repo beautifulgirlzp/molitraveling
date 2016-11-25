@@ -1,0 +1,22 @@
+<div class="register">
+	<div class="register-box">
+		<form name="userForm" ng-model="userForm" novalidate>
+			<h3>登录</h3>
+			<input type="tel" placeholder="请输入您的手机号码" class="register-tel" name="userPhone" ng-model="userPhone" ng-pattern="/^(1[35789][0-9]{9})$/" required>
+			<p ng-bind="registerPhoneP" ng-show="userForm.userPhone.$dirty && userForm.userPhone.$invalid  || registerPhonePShow"></p>
+			<input type="password" placeholder="请输入您的密码"  class="register-password" name="userPassword" minlength="6" maxlength="12" ng-model="userPassword" required>
+			<p ng-bind="registerPasswordP" ng-show="userForm.userPassword.$dirty && userForm.userPassword.$invalid || registerPasswordPShow"></p>
+			<input type="submit" value="登录"  class="register-submit" ng-class="{registerSubmit:!userForm.$invalid}" ng-disabled="userForm.$invalid" ng-click="registerClick()">
+			<label><input type="checkbox"  class="register-checkbox" ng-click="rememberClick()">记住我</label>
+			<div class="register-partner">
+				<p class="clear"><span class="register-partner-span fl"></span><span class="register-partner-test">第三方登录</span><span class="register-partner-span fr"></span></p>
+				<p class="register-partner-p">
+					<a href="#"><i class="icon-weixin"></i></a>
+					<a href="#"><i class="icon-weixin"></i></a>
+					<a href="#"><i class="icon-weixin"></i></a>
+				</p>
+			</div>
+			<p class="register-box-bottom"><span>新用户？</span><a ui-sref="login">立即注册</a></p>
+		</form>
+	</div>
+</div>

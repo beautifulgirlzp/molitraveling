@@ -1,0 +1,150 @@
+.PC_content{
+	background: #fff;
+	.active{
+	color:#fa8919;
+		}
+	.content{
+		margin: 30px auto;
+		background: #fff;
+	}
+	.sidebar{
+		padding: 20px 0px;
+		width: 179px;
+		box-sizing: border-box;
+		border:1px solid #e7e8ea;
+		border-right: 0px;
+		transition: all linear 0.5s;
+	  	position: relative;
+	}
+	.sidebar-box{
+		position: relative;
+	}
+	.sidebar-box>i{
+		position: absolute;
+		top: 8px;
+		left: 20px;
+	}
+	.sidebar-box-content{
+		font-size: 12px;
+		line-height: 30px;
+		display: block;
+	}
+	.sidebar-box-content>li{
+		padding: 0px 10px 0px 60px;
+	}
+	.sidebar-box-content.active{
+	  height: 0;
+	}
+	.sidebar-box .sidebar-box-title{
+		line-height: 35px;
+		font-size: 14px;
+		color: #000;
+		font-weight: bolder;
+		padding: 0px 20px 0px 40px;
+	}
+	.sidebar-box .sidebar-box-title span{
+		display: block;
+		width: 10px;
+		height: 35px;
+		background: url("images/test1.png") no-repeat center center;
+		float: right;
+	}
+	.sidebar-box-content>li:hover{
+		cursor: pointer;
+		color:#fa8919;
+		background: #ccc;
+	}
+	.sidebar-box>.sidebar-box-title:hover{
+		cursor: pointer;
+		color:#fa8919;
+	}
+	.main{
+		border:1px solid #e7e8ea;
+		box-sizing: border-box;
+		.main-box{
+			width: 1129px;
+			box-sizing: border-box;
+			span{
+				margin-right: 20px;
+				&.right-span{
+					text-align: left;
+					font-size: 14px;
+					color:#636363;
+					float: right;
+				}
+			}
+			&.main-color{
+				span{
+					color:#fff;
+				}
+			}
+			&.main-font{
+				span{
+					color:#000;
+				}
+				.main-color-100{
+					.right-span{
+						margin-right: 100px;
+					}
+				}	
+			}
+			&.main-border{
+				p{
+				    color: #949494;
+				    line-height: 25px;
+				    font-size: 14px;
+					&.main-p{
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+	.main-box-title{
+		margin-top: 20px;
+		padding: 0px 40px;
+		line-height: 35px;
+		font-size: 14px;
+		border-bottom: 1px solid #ccc;
+		position: relative;
+		&:before{
+			position: absolute;
+			top: 10px;
+			left: 27px;
+			height: 15px;
+			width: 5px;
+			background: #fa8919;
+			display: inline-block;
+			content: " "
+		}
+	}
+}
+.main-box-content{
+	margin: 30px 40px;
+	.main-color-100{
+	    padding:0px 30px;
+	    height: 70px;
+	    line-height: 70px;
+	    margin-bottom: 10px;
+	}
+	.main-color-49{
+		box-sizing: border-box;
+		width: 49%;
+	    padding:0px 30px;
+	    height: 70px;
+	    line-height: 70px;
+	    margin-bottom: 15px;
+	    float: left;
+	    &:nth-of-type(2n+1){
+		    margin-right: 2%;
+	    }
+	}
+	.main-30{
+		width: 30%;
+		margin-right: 5%;
+		&:nth-of-type(3n){
+			margin-right: 0;
+		}
+		float: left;
+	}
+}

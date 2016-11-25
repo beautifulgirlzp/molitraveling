@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='bower_components/angular/angular.js'></script>
+	<script src='bower_components/angular-ui-router/release/angular-ui-router.js'></script>
+	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src='bower_components/jquery/dist/jquery.js'></script>
+	<link rel="stylesheet" type="text/css" href="app.min.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+</head>
+<body ng-app='app' ng-controller="imp_ctr">
+<!-- header -->
+	<header>
+		<div class="header-logo">
+			<a ui-sref="index" class="logo-href">
+				<span class="logo-img"></span>
+				<span class="sep"></span>
+				魔力旅游网
+			</a>
+		</div>
+		<ul class="header-nav">
+			<li><a ui-sref="home.img">Home</a></li>
+			<li><a ui-sref="cates">美食推荐</a></li>
+			<li><a ui-sref="buy">旅游规划</a></li>
+			<li><a ui-sref="demo">娱乐</a></li>
+		</ul>
+		<div class="header-right">
+			<a ui-sref="register" ng-show="!loginShow">登录</a>
+			<a ui-sref="login" ng-show="!loginShow">注册</a>
+			<a ui-sref="index({key:currentUser.key,value:currentUser.value})" ng-show="loginShow">首页</a>
+			<a ui-sref="register" ng-click="cancelFn()" ng-show="loginShow">注销</a>
+		</div>
+	</header>
+<!-- main -->
+	<div ui-view='' class="main_content"></div>
+<!-- fixedSider -->
+	<div class="fixedSider">
+		<div class="backToTop" gotop>
+			<div class="iconfont icon-backToTop ">
+				
+			</div>
+			<div>
+				返回顶部
+			</div>
+		</div>
+		<div class="questionReport">
+			<div class="iconfont icon-erweima">
+				
+			</div>
+			<div>
+				反馈问题
+			</div>
+		</div>
+	</div>
+	<script src='app.min.js'></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<div class="demo c-cBg" ng-controller="demo_ctr">
+	<div class="d-container ">
+		<h3>动画案例</h3>
+		<div class="main">
+			<div class="caseBox clearfix">
+				<div class="caseItem fl" ng-repeat="item in demo">
+				    <div class="mask pr" ng-mouseenter="mouseenter($index)" ng-mouseleave="mouseleave($index)">
+    				   	<div class="maskone pa">
+	    					<img ng-src="{{item.img}}" alt="">
+    				   	</div>
+    				   	<div class="masktwo pa">
+    				   		<img ng-src="{{item.twocode}}" alt="">
+    				   	</div>
+    				</div> 	
+    				<div class="text c-cBg">
+	    				<h4>{{item.title}}</h4>
+	    				<p>{{item.text}}</p>
+	    			</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+   

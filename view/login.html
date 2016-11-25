@@ -1,0 +1,48 @@
+<div class="login">
+	<div class="login-box">
+		<form name="userForm" ng-model="userForm" novalidate>
+			<h3>注册</h3>
+			<!-- 手机号,输入验证 -->
+			<input type="tel" 
+			placeholder="请输入您的手机号码" 
+			class="login-tel" 
+			name="userPhone" 
+			ng-model="userPhone" 
+			ng-pattern="/^(1[35789]\d{9})$/" required>
+			<p class="login-tel-p" ng-show="userForm.userPhone.$dirty && userForm.userPhone.$invalid">*请输入正确的手机号码</p>
+			<p class="login-tel-p" ng-bind="userPhoneValue" ng-show="!userForm.userPhone.$dirty && !userForm.userPhone.$error.required==true || !userForm.userPhone.$error.pattern==true && loginTelShow"></p>
+			<!-- 验证码 -->
+			<input type="text" 
+			placeholder="输入验证码" 
+			class="login-text" 
+			name="userCode" 
+			ng-model="userCode" 
+			ng-change="changeFn(userCode)" required><button type="button" 
+			class="login-btn" 
+			ng-model="loginBtnValue" 
+			name="loginBtnValue"
+			 ng-disabled="userForm.userPhone.$pristine || userForm.userPhone.$invalid && loginBtnShow" 
+			 ng-class="{loginBtn:!userForm.userPhone.$invalid && !loginBtnShow}" 
+			 ng-click="loginBtnFn()">获取验证码</button>
+			<p class="login-text-p" ng-show="userForm.userCode.$dirty && userForm.userCode.$error.required==true">*请输入您的验证码</p>
+			<!-- 密码框,输入验证 -->
+			<input type="password" placeholder="输入密码，6-12位"  class="login-password" name="userPassword" ng-model="userPassword" minlength="6" maxlength="12" required>
+			<p class="login-password-p" ng-show="userForm.userPassword.$dirty && userForm.userPassword.$invalid">*密码为6-12位</p>
+			<!-- 注册按钮 -->
+			<input type="submit" value="注册"  class="login-submit" ng-disabled="userForm.$invalid" ng-class="{loginSubmit:!userForm.$invalid && !loginTelShow}" ng-click="loginSubmitFn()">
+			<label><input type="checkbox"  class="login-checkbox">同意《魔方用户协议》</label>
+
+			<!-- 第三方登录 -->
+			<div class="login-partner">
+				<p class="clear"><span class="login-partner-span fl"></span><span class="login-partner-test">第三方登录</span><span class="login-partner-span fr"></span></p>
+				<p class="login-partner-p">
+					<a href="#"><i class="icon-liwu"></i></a>
+					<a href="#"><i class="icon-liwu"></i></a>
+					<a href="#"><i class="icon-liwu"></i></a>
+				</p>
+			</div>
+			<!-- 登陆链接 -->
+			<p class="login-box-bottom"><span>已有账户？</span><a ui-sref="register">登录</a></p>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,32 @@
+<h2 class="main_title fb">美国</h2>
+<div class="main_banner clearfix">
+	<div class="main_banner_box fl">
+		<img ng-class="{active:$index==index}"  ng-repeat="item in USA.imgList" ng-show="$index==index" ng-src={{item}} alt="">
+		<ul class="clearfix">
+			<li ng-repeat='item in USA.imgList' class="fl" ng-click='clickFn($index)' ng-class="{active:$index==index}"></li>
+		</ul>
+	</div>
+	<div class="abstract fr">
+		<div class="main_section_title f18">
+			<h3><span></span>简介</h3>
+		</div>
+		<p>{{USA.abstract}}</p>
+	</div>		
+</div>
+<div class="main_weather clearfix">
+	<div class="main_section_title f18">
+		<h3><span></span>最佳旅游时间</h3>
+	</div>
+	<div class="main_weather_detail fl" ng-repeat='item in USA.best_time'>
+		<h4>{{item.time}}</h4>
+		<p>{{item.weather}}</p>
+	</div>
+</div>
+<!-- <div class="main_article clearfix">
+	<div class="main_section_title f18">
+		<h3><span></span>旅游攻略</h3>
+	</div>
+	<div class="main_article_detail fl">
+		<p>{{USA.detail}}</p>
+	</div>
+</div> -->

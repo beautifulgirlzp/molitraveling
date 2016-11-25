@@ -1,0 +1,58 @@
+<div class="catesPage">
+    <div class="cates_header">
+        <div class="w1200">
+            <div class="clearfix">
+                <div class="header_text fl">
+                    <p><label>C</label>ates</p>
+                    <p>欢迎您!</p>
+                </div>
+                <div class="header_center fl">
+                	Try to do cook will make you happy,if you have no things to do
+                </div>
+                <div class="header_logo fr">
+                    <img src="images/cates_header.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cates_banner">
+    	<div class="banner_title">
+    		旅游时,您的选择和我们的品质更配哦!
+    	</div>
+    	<section class="banner_textslide">
+    		<ul>
+    			<li ng-class="{active:$index==showIndex}"  ng-repeat="obj in showText" ng-show="$index==showIndex">
+    				<p>{{obj.p1}}</p>
+    				<p>{{obj.p2}}</p>
+    			</li>
+    		</ul>
+    		<div class="cates_point">
+    			<span ng-class="{active:showIndex==$index}" ng-repeat="item in showText" ng-mouseenter="end($index)" ng-mouseleave="start($index)"></span>
+    		</div>
+    	</section>
+    </div>
+    <div class="cates_main">
+        <div class="w1200">
+            <div class="cates_intro">
+                <p class="p_1"><span>Welcome</span></p>
+                <p class="p_2 f16">是你的菜?</p>
+            </div>
+            <div class="cates_imgBox">
+                <ul class="clearfix">
+                    <li class="pr" ng-repeat="obj in imgBox">
+                        <a href=""><img ng-src="{{obj.imgsrc}}" alt=""></a>
+                        <div class="item_intro">
+                            <h4>{{obj.h4_title}}</h4>
+                            <p>{{obj.p_intro}}</p>
+                        </div>
+                        
+                        <div class="mask pa" >
+                        	<p class="mask_p1">{{obj.mask_p1}}</p>
+                        	<p class="mask_p2">{{obj.mask_p2}}</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
